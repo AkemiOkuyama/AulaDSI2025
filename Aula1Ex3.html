@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!-- Define o tipo de documento como HTML5 -->
+    <meta charset="UTF-8">
+    <!-- Define a codificação de caracteres como UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Garante que o site seja responsivo -->
+    <title>Aula 1 - Exemplo 3</title>
+    <style>
+        /* Estiliza o corpo da página */
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: rgb(72, 7, 124);
+            background-color: #f4f4f4;
+            text-align: center;
+            
+            
+        }
+
+        /* Container flexível que organiza os itens */
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            max-width: 800px;
+            margin: 100px auto;
+            padding: 10px;
+            background-color: rgb(198, 159, 243);
+        }
+        /* Estiliza cada item dentro do container */
+        .item {
+            width: 48%; /* Cada item ocupa 48% da largura */
+            background: white;
+            padding: 20px;           
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+        /* Em telas menores que 600px, os itens ocupam 100% da largura */
+        @media screen and (max-width: 600px) {
+            .item {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="titulo"><h1>Exemplo de Site Reponsivo com Flexbox</h1></div>
+    <!-- Container flexível -->
+    <div class="container">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+        <div class="item">Item 4</div>
+    </div>
+</body>
+</html>
