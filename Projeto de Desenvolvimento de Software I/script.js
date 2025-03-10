@@ -1,5 +1,5 @@
 function Cadastrar(event) {
-    event.preventDefault(); // Previne o envio do formulário
+    event.preventDefault();
 
     alert("Dados cadastrados com sucesso!");
 }
