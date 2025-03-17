@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Página de Inscrição</title>
+    <script>
+        function Inscrever(event) {
+            event.preventDefault(); // Impede o envio do formulário para testar o alert
+            alert("Inscrição realizada com sucesso!");
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <img src="imagens/Logo-UNEduvale3.png" class="imagem" alt="Logo UNEduvale">
+        <img src="imagens/conince.webp" class="conince">
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="index0.html">Home</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <h1>Inscrição no Evento</h1>
+            <form onsubmit="Inscrever(event)">
+                <fieldset>
+                    <legend><b>Dados do Aluno</b></legend>
+
+                    <label for="nome">Nome Completo</label>
+                    <input type="text" id="nome" name="nome" class="campo" required aria-label="Nome Completo">
+
+                    <label for="telefone">Telefone</label>
+                    <input type="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000" class="campo" required aria-label="Telefone">
+
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" placeholder="seuemail@email.com" class="campo" required aria-label="E-mail">
+
+                    <label for="nascimento">Data de Nascimento</label>
+                    <input type="date" id="nascimento" name="nascimento" class="campo" required aria-label="Data de Nascimento">
+                </fieldset>
+
+                <fieldset>
+                    <legend><b>Dados do Curso</b></legend>
+
+                    <label for="matricula">Matrícula</label>
+                    <input type="number" id="matricula" name="matricula" class="campo" required aria-label="Matrícula">
+
+                    <label for="inicio">Data de Início</label>
+                    <input type="date" id="inicio" name="inicio" class="campo" required aria-label="Data de Início">
+
+                    <label for="conclusao">Data de Conclusão</label>
+                    <input type="date" id="conclusao" name="conclusao" class="campo" required aria-label="Data de Conclusão">
+
+                    <label for="curso">Curso</label>
+                    <select id="curso" name="curso" class="campo" required aria-label="Curso">
+                        <option selected disabled value="">Selecione uma opção</option>
+                        <option>Administração</option>
+                        <option>Agronomia</option>
+                        <option>Análise e Desenvolvimento de Sistemas</option>
+                        <option>Arquitetura e Urbanismo</option>
+                        <option>Ciências Biológicas</option>
+                        <option>Ciências Contábeis</option>
+                        <option>Direito</option>
+                        <option>Educação Física</option>
+                        <option>Enfermagem</option>
+                        <option>Engenharia Civil</option>
+                        <option>Fisioterapia</option>
+                        <option>Jornalismo</option>
+                        <option>Medicina Veterinária</option>
+                        <option>Nutrição</option>
+                        <option>Psicologia</option>
+                        <option>Publicidade e Propaganda</option>
+                        <option>Zootecnia</option>
+                    </select>
+                </fieldset>
+
+                <button type="submit" class="botao">Inscrever-se</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; Gabriele Okuyama | 2025</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
