@@ -1,0 +1,20 @@
+body{
+    background-color: oklch(82.7% 0.119 306.383);
+    text-align: center;
+}
+
+h1{
+    color: oklch(29.1% 0.149 302.717);
+    font-family: Candara;
+}
+
+.destaque {
+    color: oklch(29.1% 0.149 302.717);
+    font-weight: bold;
+    }
+
+button{
+    font-family: Candara;
+    background-color: white;
+    border-radius: 5px;
+}
