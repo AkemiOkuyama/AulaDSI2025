@@ -1,0 +1,19 @@
+JSON
+	Chave
+	Valor
+
+	{
+	  "nome": "Gabriele",
+	  "idade": 20
+	};
+
+package.json -> pacotes json
+	{
+	 (chave) "react": "17.1.9" (valor)
+	};
+
+-- // -- 
+
+VAR -> Variável, o valor pode mudar.
+LET -> Let, define o valor.
+CONST -> Constante, não consegue alterar o valor.
