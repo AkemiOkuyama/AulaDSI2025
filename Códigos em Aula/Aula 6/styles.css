@@ -13,6 +13,11 @@ h1{
     font-weight: bold;
     }
 
+.retorno {
+    color: oklch(29.1% 0.149 302.717);
+    font-family: Candara;
+}
+
 button{
     font-family: Candara;
     background-color: white;
