@@ -21,15 +21,17 @@ header {
     text-align: center;
 }
 
-.eduvale, .conince {
+.eduvale {
     width: max(500px, 50vw);
     margin-bottom: 15px;
 }
 
 .conince {
+    width: max(500px, 50vw);
+    margin-bottom: 15px;
     border-radius: 30px;
     box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.2);
-    width: 1000px; 
+    width: 800px; 
     height: 350px;
 }
 
