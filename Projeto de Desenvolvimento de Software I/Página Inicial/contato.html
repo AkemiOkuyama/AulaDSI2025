@@ -1,60 +1,79 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="stylecontato.css">
-    <title>Contato - XVII CONINCE</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contato - XVII CONINCE</title>
+  <link rel="stylesheet" href="stylecontato.css" />
 </head>
 <body>
-    <header>
-        <img src="imagens/Logo-UNEduvale3.png" alt="Logo Eduvale" class="eduvale">
-        <img src="imagens/conince.webp" alt="Logo CONINCE" class="conince">
-    </header>
+  <header>
+    <img src="imagens/Logo-UNEduvale3.png" alt="Logo Eduvale" class="eduvale" />
+    <img src="imagens/conince.webp" alt="Logo CONINCE" class="conince" />
+  </header>
 
-    <nav>
-        <ul>
-            <li><a href="inicio.html">Início</a></li>
-            <li><a href="sobre.html">Sobre</a></li>
-            <li><a href="contato.html">Contato</a></li>
-        </ul>
-    </nav>
+  <nav>
+    <ul>
+      <li><a href="inicio.html">Início</a></li>
+      <li><a href="sobre.html">Sobre</a></li>
+      <li><a href="contato.html">Contato</a></li>
+    </ul>
+  </nav>
 
-    <main>
-        <section>
-            <h1>Entre em Contato</h1>
+  <main>
+    <h1>Entre em Contato</h1>
 
-            <h2>Centro Universitário Eduvale</h2>
+    <div class="contato-grid">
+      <section class="dados-contato fade-in">
+        <h2>Centro Universitário Eduvale</h2>
+        <p>
+          <strong>Endereço:</strong><br />
+          Av. Pref. Misael Euphrásio Leal, 347 – Jardim América<br />
+          Avaré/SP – CEP: 18705-050
+        </p>
+        <p>
+          <strong>Fones:</strong><br />
+          (14) 3733-8585 / (14) 3733-8383
+        </p>
+        <p>
+          <strong>WhatsApp:</strong><br />
+          (14) 99623-8383
+        </p>
+        <p>
+          <strong>E-mail:</strong><br />
+          <a href="mailto:comercial@eduvaleavare.com.br">comercial@eduvaleavare.com.br</a>
+        </p>
+      </section>
 
-            <p>
-                <strong>Endereço:</strong><br>
-                Av. Pref. Misael Euphrásio Leal, 347 – Jardim América<br>
-                Avaré/SP – CEP: 18705-050
-            </p>
+      <section class="form-contato fade-in">
+        <h2>Deixe seu comentário</h2>
+        <form id="formContato">
+          <label for="nome">Nome:</label>
+          <input type="text" id="nome" class="campo" required />
 
-            <p>
-                <strong>Fones:</strong><br>
-                (14) 3733-8585 / (14) 3733-8383
-            </p>
+          <label for="email">E-mail:</label>
+          <input type="email" id="email" class="campo" required />
 
-            <p>
-                <strong>WhatsApp:</strong><br>
-                (14) 99623-8383
-            </p>
+          <label for="telefone">Telefone:</label>
+          <input type="tel" id="telefone" class="campo" required />
 
-            <p>
-                <strong>E-mail:</strong><br>
-                <a href="mailto:comercial@eduvaleavare.com.br">comercial@eduvaleavare.com.br</a>
-            </p>
-        </section>
+          <label for="mensagem">Mensagem:</label>
+          <textarea id="mensagem" class="campo" rows="5" required></textarea>
 
-        <figure>
-            <img src="imagens/contato.png" alt="Imagem ilustrativa de contato" class="contato">
-        </figure>
-    </main>
+          <button type="submit" class="botao">Enviar</button>
+        </form>
+      </section>
+    </div>
 
-    <footer>
-        <p>&copy; 2025 Gabriele Okuyama. Todos os direitos reservados.</p>
-    </footer>
+    <figure>
+      <img src="imagens/contato.png" alt="Imagem ilustrativa de contato" class="contato" />
+    </figure>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Gabriele Okuyama. Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="scriptcontato.js"></script>
 </body>
 </html>

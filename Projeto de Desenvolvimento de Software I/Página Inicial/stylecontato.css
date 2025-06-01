@@ -1,126 +1,168 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    color: #333;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  color: #000;
 }
 
 header {
-    background-color: #fff;
-    padding: 20px;
-    text-align: center;
-    border-bottom: 2px solid #00398020;
-}
-
-.eduvale, .conince {
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 15px;
+  text-align: center;
+  background-color: #fff;
+  padding: 20px;
 }
 
 .eduvale {
-    width: max(500px, 50vw);
-    margin-bottom: 15px;
+  width: max(300px, 50vw);
+  height: auto;
+  margin-bottom: 15px;
 }
 
 .conince {
-    width: max(500px, 50vw);
-    margin-bottom: 15px;
-    border-radius: 30px;
-    box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.2);
-    width: 800px; 
-    height: 350px;
+  width: 90%;
+  max-width: 800px;
+  height: auto;
+  border-radius: 30px;
+  box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 nav {
-    background-color: rgb(0, 57, 128);
-    color: #fff;
-    font-weight: bold;
-    padding: 10px;
-    display: flex;
-    justify-content: center;
+  background-color: #003980;
+  padding: 10px 0;
 }
 
 nav ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    display: flex;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
 }
 
-nav li {
-    display: inline-block;
-    margin: 0 15px;
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
 }
 
-nav li a {
-    color: white;
-    text-decoration: none;
-    font-size: 16px;
-}
-
-nav li a:hover {
-    text-decoration: underline;
+nav a:hover {
+  text-decoration: underline;
 }
 
 main {
-    flex: 1;
-    padding: 30px 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 30px;
-}
-
-section {
-    max-width: 700px;
-    background: #fff;
-    padding: 25px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 900px;
+  margin: 30px auto;
+  background: #fff;
+  padding: 30px 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  color: #000;
 }
 
 h1 {
-    color: #003980;
-    text-align: center;
-    margin-bottom: 20px;
-    font-size: 2.2rem;
+  text-align: center;
+  color: #003980;
+  margin-bottom: 30px;
+}
+
+.contato-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+section {
+  max-width: 100%;
 }
 
 h2 {
-    margin-bottom: 15px;
-    color: #003980;
-    font-size: 1.4rem;
-    text-align: center;
+  color: #003980;
+  margin-bottom: 15px;
 }
 
-p {
-    margin-bottom: 15px;
-    line-height: 1.6;
+.dados-contato p,
+.dados-contato a {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #000;
 }
 
-a {
-    color: #003980;
+.dados-contato a {
+  color: #003980;
+  text-decoration: none;
 }
 
-a:hover {
-    text-decoration: underline;
+.dados-contato a:hover {
+  text-decoration: underline;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.campo, textarea {
+  width: 100%;
+  padding: 12px;
+  border-radius: 5px;
+  border: 1.5px solid #ccc;
+  font-size: 16px;
+  font-family: inherit;
+  transition: border-color 0.3s ease;
+}
+
+.campo:focus, textarea:focus {
+  border-color: #003980;
+  outline: none;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 120px;
+  max-height: 200px;
+}
+
+.botao {
+  background-color: #003980;
+  color: white;
+  padding: 15px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  align-self: center;
+  transition: background-color 0.3s, transform 0.2s;
+  width: 150px;
+}
+
+.botao:hover {
+  background-color: #002d64;
+  transform: scale(1.05);
 }
 
 .contato {
-    max-width: 500px;
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+  display: block;
+  margin: 40px auto 0;
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
 footer {
@@ -128,32 +170,29 @@ footer {
     color: white;
     text-align: center;
     padding: 10px;
-    margin-top: auto;
 }
 
-footer p {
-    font-size: 0.9rem;
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.fade-in.appear {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 @media (max-width: 768px) {
-    nav ul {
-        flex-direction: column;
-        gap: 10px;
-    }
+  .contato-grid {
+    grid-template-columns: 1fr;
+  }
 
-    .conince, .eduvale {
-        width: 100%;
-    }
+  main {
+    padding: 20px 15px;
+  }
 
-    h1 {
-        font-size: 1.8rem;
-    }
-
-    .contato {
-        max-width: 90%;
-    }
-
-    section {
-        padding: 20px;
-    }
+  .botao {
+    width: 100%;
+  }
 }
