@@ -1,0 +1,54 @@
+-> Objetivo do Projeto
+O objetivo principal do meu projeto é criar uma página de inscrição online para um evento anual de iniciação científica promovido por uma instituição de ensino. 
+
+Como referência, utilizei o modelo da nossa universidade, que realiza o evento CONINCE.
+
+Baseei o conteúdo e o tema no evento do ano anterior. Por enquanto, o site está focado exclusivamente na inscrição para participação. 
+
+Funcionalidades como submissão de projetos e acompanhamento de etapas ainda não foram incluídas, por falta de conteúdo disponível (nunca cheguei a essa etapa como participante).
+
+A ideia surgiu a partir da minha experiência pessoal ao me inscrever no evento, que utilizava uma plataforma externa. 
+
+Acredito que isso se deva à necessidade de emissão de certificados, o que pode ser uma possibilidade de expansão futura no meu projeto.
+
+Funcionalidade da Página
+A página tem como principal funcionalidade facilitar a inscrição de alunos no evento, por meio de um formulário simples e direto. 
+
+Ao preencher os dados, o aluno envia suas informações, e o site exibe uma mensagem de confirmação, informando que os dados foram coletados com sucesso.
+
+//Observação: Neste momento, os dados não são enviados para um banco de dados ou API, mas utilizei uma função em JavaScript para capturar o nome do aluno e simular o envio com uma mensagem de sucesso.//
+
+-> Informações Coletadas no Formulário
+O formulário é dividido em duas seções principais:
+*Dados do Aluno:
+- Nome completo
+
+- Telefone
+
+- E-mail
+
+- Data de nascimento
+
+*Dados do Curso:
+- Número da matrícula
+
+- Data de início do curso
+
+- Data prevista de conclusão
+
+- Curso
+
+-> Outras Páginas do Site
+Além da página de inscrição, o site conta com as seguintes seções:
+
+- Página Principal (Home): introduz o evento de forma simples e cativante.
+
+- Página “Sobre”: apresenta mais detalhes sobre o evento.
+
+- Página de Inscrição: onde o aluno pode preencher o formulário para se inscrever.
+
+- Página de Contato: incluí um formulário para o aluno entrar em contato com os organizadores.
+
+A navegação entre as páginas foi pensada de forma intuitiva: da home, o usuário pode acessar o “Sobre”, depois ser direcionado à Inscrição, e, se desejar, visitar a aba de Contato.
+
+
