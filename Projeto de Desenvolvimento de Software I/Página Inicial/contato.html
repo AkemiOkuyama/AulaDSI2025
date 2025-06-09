@@ -26,7 +26,7 @@
     <h1>Entre em Contato</h1>
 
     <div class="contato-grid">
-      <section class="dados-contato fade-in">
+      <section>
         <h2>Centro Universitário Eduvale</h2>
         <p>
           <strong>Endereço:</strong><br />
@@ -47,23 +47,24 @@
         </p>
       </section>
 
-      <section class="form-contato fade-in">
+      <section>
         <h2>Deixe seu comentário</h2>
-        <form id="formContato">
+        <form id="formContato" onsubmit="enviarContato(event)">
           <label for="nome">Nome:</label>
-          <input type="text" id="nome" class="campo" required />
+          <input type="text" id="nome" name="nome" class="campo" required />
 
           <label for="email">E-mail:</label>
-          <input type="email" id="email" class="campo" required />
+          <input type="email" id="email" name="email" class="campo" required />
 
           <label for="telefone">Telefone:</label>
-          <input type="tel" id="telefone" class="campo" required />
+          <input type="tel" id="telefone" name="telefone" class="campo" required />
 
           <label for="mensagem">Mensagem:</label>
-          <textarea id="mensagem" class="campo" rows="5" required></textarea>
+          <textarea id="mensagem" name="mensagem" class="campo" rows="5" required></textarea>
 
           <button type="submit" class="botao">Enviar</button>
         </form>
+
       </section>
     </div>
 

@@ -73,9 +73,19 @@ h1 {
   text-align: center;
 }
 
+section p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  text-align: justify;
+  max-width: 800px;
+  margin: 0 auto 30px;
+  color: #333;
+  padding: 0 20px;
+}
+
 p {
   margin-bottom: 15px;
-  color: #333;
+  color: #ffffff;
   line-height: 1.7;
 }
 
@@ -115,16 +125,6 @@ footer {
     padding: 10px;
 }
 
-.fade-in {
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 1s ease, transform 1s ease;
-}
-.fade-in.appear {
-  opacity: 1;
-  transform: translateY(0);
-}
-
 @media (max-width: 768px) {
   nav ul {
     flex-direction: column;
@@ -133,4 +133,20 @@ footer {
   .botao {
     width: 90%;
   }
+}
+
+@media (max-width: 768px) {
+    .eduvale, .conince {
+        width: 90%;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .botao {
+        width: auto;
+    }
 }

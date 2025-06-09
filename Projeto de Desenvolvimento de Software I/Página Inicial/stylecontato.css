@@ -27,7 +27,7 @@ header {
   max-width: 800px;
   height: auto;
   border-radius: 30px;
-  box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.2);
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.15);
   margin-bottom: 20px;
   display: block;
   margin-left: auto;
@@ -36,14 +36,14 @@ header {
 
 nav {
   background-color: #003980;
-  padding: 10px 0;
+  padding: 0.75rem 0;
 }
 
 nav ul {
   list-style: none;
   display: flex;
   justify-content: center;
-  gap: 20px;
+  gap: 1.25rem;
   padding: 0;
   margin: 0;
 }
@@ -53,6 +53,7 @@ nav a {
   text-decoration: none;
   font-weight: bold;
   font-size: 1rem;
+  cursor: pointer;
 }
 
 nav a:hover {
@@ -100,6 +101,7 @@ h2 {
 .dados-contato a {
   color: #003980;
   text-decoration: none;
+  cursor: pointer;
 }
 
 .dados-contato a:hover {
@@ -117,22 +119,25 @@ label {
   margin-bottom: 5px;
 }
 
-.campo, textarea {
+input.campo,
+textarea.campo {
   width: 100%;
   padding: 12px;
   border-radius: 5px;
   border: 1.5px solid #ccc;
   font-size: 16px;
   font-family: inherit;
-  transition: border-color 0.3s ease;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
-.campo:focus, textarea:focus {
+input.campo:focus,
+textarea.campo:focus {
   border-color: #003980;
   outline: none;
+  box-shadow: 0 0 5px 2px rgba(0, 57, 128, 0.4);
 }
 
-textarea {
+textarea.campo {
   resize: vertical;
   min-height: 120px;
   max-height: 200px;
@@ -146,7 +151,7 @@ textarea {
   border-radius: 5px;
   font-size: 16px;
   cursor: pointer;
-  align-self: center;
+  margin: 0 auto;
   transition: background-color 0.3s, transform 0.2s;
   width: 150px;
 }
@@ -166,21 +171,11 @@ textarea {
 }
 
 footer {
-    background-color: rgb(0, 57, 128);
-    color: white;
-    text-align: center;
-    padding: 10px;
-}
-
-.fade-in {
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 1s ease-out, transform 1s ease-out;
-}
-
-.fade-in.appear {
-  opacity: 1;
-  transform: translateY(0);
+  background-color: rgb(0, 57, 128);
+  color: white;
+  text-align: center;
+  padding: 10px;
+  font-size: 0.9rem;
 }
 
 @media (max-width: 768px) {
@@ -191,8 +186,9 @@ footer {
   nav ul {
     flex-direction: column;
     align-items: center;
-    gap: 15px;
+    gap: 1rem;
   }
+  
   main {
     padding: 20px 15px;
   }
